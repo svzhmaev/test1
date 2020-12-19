@@ -3,6 +3,7 @@ My little Stack
 """
 from typing import Any
 
+
 my_stack = []   # вершина справа
 
 
@@ -13,8 +14,7 @@ def push(elem: Any) -> None:
     :param elem: element to be pushed
     :return: Nothing
     """
-
-   my_stack.append(elem)
+    my_stack.append(elem)
    # print(elem)
     return None
 
@@ -25,8 +25,8 @@ def pop() -> Any:
 
     :return: popped element
     """
-    my_stack.pop(-1)
-    return None
+
+    return my_stack.pop(-1)
 
 
 def peek(ind: int = 0) -> Any:
