@@ -13,6 +13,7 @@ def push(elem: Any) -> None:
     :param elem: element to be pushed
     :return: Nothing
     """
+
    my_stack.append(elem)
    # print(elem)
     return None
@@ -24,6 +25,7 @@ def pop() -> Any:
 
     :return: popped element
     """
+    my_stack.pop(-1)
     return None
 
 
@@ -34,8 +36,10 @@ def peek(ind: int = 0) -> Any:
     :param ind: index of element (count from the top, 0 - top, 1 - first from top, etc.)
     :return: peeked element or None if no element in this place
     """
-    print(ind)
-    return None
+    if ind >= len(my_stack):
+        return  None
+    #print(ind)
+    return my_stack(-1-ind)
 
 
 def clear() -> None:
